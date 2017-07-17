@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context=".MainActivity" >
+
+    <TextView
+            android:id="@+id/TaxLBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/AmountLBL"
+            android:layout_below="@+id/AmountLBL"
+            android:layout_marginTop="35dp"
+            android:text="@string/TaxLBL" />
+
+    <TextView
+            android:id="@+id/AmountLBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:text="@string/AmountLBL" />
+
+    <TextView
+            android:id="@+id/TotalLBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TipLBL"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:text="@string/TotalLBL" />
+
+    <TextView
+            android:id="@+id/TipLBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TotalLBL"
+            android:layout_alignLeft="@+id/TaxLBL"
+            android:layout_marginBottom="28dp"
+            android:text="@string/TipLBL" />
+
+    <EditText
+            android:id="@+id/TotalET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TotalLBL"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/TotalLBL"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    <EditText
+            android:id="@+id/TipET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TipLBL"
+            android:layout_alignLeft="@+id/TotalET"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    <EditText
+            android:id="@+id/TaxET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TaxLBL"
+            android:layout_alignBottom="@+id/TaxLBL"
+            android:layout_alignLeft="@+id/TipET"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    <EditText
+            android:id="@+id/AmountET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/AmountLBL"
+            android:layout_alignBottom="@+id/AmountLBL"
+            android:layout_alignLeft="@+id/TaxET"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    <RadioGroup
+            android:id="@+id/pftRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CalculateBTN"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+        <RadioButton
+                android:id="@+id/tenRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/TenprctBTN" />
+
+        <RadioButton
+                android:id="@+id/fifteenRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FifteenprctBTN" />
+
+        <RadioButton
+                android:id="@+id/twentyRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TwentyprctBTN" />
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/pftLBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TaxET"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/pftLBL" />
+
+    <Button
+            android:id="@+id/CalculateBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TipET"
+            android:layout_alignRight="@+id/pftLBL"
+            android:text="@string/CalculateBTN" />
+
+</RelativeLayout>

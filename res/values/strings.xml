@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="AmountET">Amount</string>
+    <string name="TaxET">Tax</string>
+    <string name="TipLBL">Tip</string>
+    <string name="TotalLBL">Total</string>
+    <string name="TaxLBL">Tax</string>
+    <string name="AmountLBL">Amount</string>
+    <string name="FifteenprctBTN">15%</string>
+    <string name="TenprctBTN">10%</string>
+    <string name="TwentyprctBTN">20%</string>
+    <string name="CalculateBTN">Calculate</string>
+    <string name="pftLBL">Percentage For Tip</string>
+</resources>
